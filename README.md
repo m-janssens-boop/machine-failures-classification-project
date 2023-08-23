@@ -1,4 +1,4 @@
-# Bosch-production-line-performance-project
+machine-failures-classification
 
 Project reqs:
 # Project 4 Overview
