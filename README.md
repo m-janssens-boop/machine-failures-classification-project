@@ -5,24 +5,24 @@ Project reqs:
 For Project 4, you will work with your group to solve, analyze, or visualize a problem using machine learning (ML) with the other technologies we’ve learned. Here are the specific requirements:
 
 Find a problem worth solving, analyzing, or visualizing.
-1. Use machine learning (ML) with the technologies we’ve learned.
-2. You must use Scikit-learn and/or another machine learning library.
-3. Your project must be powered by a dataset with at least 10,000 records.
+1. <s> Use machine learning (ML) with the technologies we’ve learned. </s>
+2. <s> You must use Scikit-learn and/or another machine learning library. </s>
+3. <s> Your project must be powered by a dataset with at least 10,000 records. </s>
 4. You must use Pandas and Matplotlib
 5. You must use a database (SQL or MongoDB)
-6. You must use GCP or AWS
+6. <s> You must use GCP or AWS </s>
 7. You must either use Javascript (Plotly/Leaflet) OR Tableau
 
 %% Cell type:markdown id:2baddcd6 tags:
 
 # Project 4 Requirements
 ### Data Model Implementation (25 points)
-* <s> A Python script initializes, trains, and evaluates a model (10 points) <s>
+* <s> A Python script initializes, trains, and evaluates a model (10 points) </s>
 * Multiple models and cross validation were used (10 points)
 * The data is cleaned, normalized, and standardized prior to modeling (5 points)
     * Data contained at least 10,000 records (contact instructor/TA if you have less than 10000)
 * The model utilizes data retrieved from SQL or Spark (5 points)
-* <s> The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared. (5 points) <s>
+* <s> The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared. (5 points) </s>
 * Cloud computing was used, either AWS or GCP (5 points)
 
 ### Data Model Optimization (25 points)
@@ -38,3 +38,33 @@ Find a problem worth solving, analyzing, or visualizing.
 * Content, transitions, and conclusions flow smoothly within any time restrictions. (5 points)
 * A dashboard was created using Tableau or Javascript and is relevant to the project. (10 points)
 * The presentation maintains audience interest. (5 points)
+
+
+
+
+Machine Failure Classification
+--------------------
+## Overview/Background
+This project tests different machine learning algorithms to find the optimal algorithm to predict machine failures for a large company that produces machine fabricated parts. The dataset used to train the models is synthetically generated and can be found at this [link](https://www.kaggle.com/competitions/playground-series-s3e17/data), it is based on this [Machine Failure Predictions dataset](https://www.kaggle.com/datasets/dineshmanikanta/machine-failure-predictions). 
+
+## Preprocessing the Data
+The csv files of the dataset were placed in an s3 bucket on AWS. 
+
+## Models and Their Performance
+
+### Logistic Regression
+
+
+### K-Means/K Nearest Neighbors
+
+
+### Gradient Boosting Classifier/Grid Search CV
+
+
+### Neural Network
+
+
+## Final Model Choice and Optimization
+
+
+## Conclusions and Results
