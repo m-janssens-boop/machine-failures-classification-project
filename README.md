@@ -51,7 +51,11 @@ This project tests different machine learning algorithms to find the optimal alg
 * The csv files of the dataset were placed in s3 buckets on AWS
 * The `id` columns were dropped from both the training and the testing datasets
 * The testing and training sets were concatenated into a dataframe so that one-hot encoding could be implemented, using the `pd.get_dummies()` function
-* 
+* The categorically encoded datasets were then split again into their respective training and testing sets
+* The target array was created using the `Machine Failures` column
+* The Features contains the remainder of the one-hot encoded variables
+* To test the models locally, the training set was split into testing and training sets using `sklearn` 
+* The training and testing sets were scaled using `StandardScaler()`
 
 ## Models and Their Performance
 
@@ -59,6 +63,9 @@ This project tests different machine learning algorithms to find the optimal alg
 
 
 ### K-Means/K Nearest Neighbors
+
+
+### Random Forest
 
 
 ### Gradient Boosting Classifier/Grid Search CV
