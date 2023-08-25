@@ -48,7 +48,14 @@ Machine Failure Classification
 This project tests different machine learning algorithms to find the optimal algorithm to predict machine failures for a large company that produces machine fabricated parts. The dataset used to train the models is synthetically generated and can be found at this [link](https://www.kaggle.com/competitions/playground-series-s3e17/data), it is based on this [Machine Failure Predictions dataset](https://www.kaggle.com/datasets/dineshmanikanta/machine-failure-predictions). 
 
 ## Preprocessing the Data
-The csv files of the dataset were placed in an s3 bucket on AWS. 
+* The csv files of the dataset were placed in s3 buckets on AWS
+* The `id` columns were dropped from both the training and the testing datasets
+* The testing and training sets were concatenated into a dataframe so that one-hot encoding could be implemented, using the `pd.get_dummies()` function
+* The categorically encoded datasets were then split again into their respective training and testing sets
+* The target array was created using the `Machine Failures` column
+* The Features contains the remainder of the one-hot encoded variables
+* To test the models locally, the training set was split into testing and training sets using `sklearn` 
+* The training and testing sets were scaled using `StandardScaler()`
 
 ## Models and Their Performance
 
@@ -56,6 +63,9 @@ The csv files of the dataset were placed in an s3 bucket on AWS.
 
 
 ### K-Means/K Nearest Neighbors
+
+
+### Random Forest
 
 
 ### Gradient Boosting Classifier/Grid Search CV
