@@ -50,21 +50,18 @@ This project tests different machine learning algorithms to find the optimal alg
 ## Preprocessing the Data - these need to be updated since we changed how the data was preprocessed for each model
 * The csv files of the dataset were placed in s3 buckets on AWS
 * The `id` columns were dropped from both the training and the testing datasets
-* The testing and training sets were concatenated into a dataframe so that one-hot encoding could be implemented, using the `pd.get_dummies()` function
-* The categorically encoded datasets were then split again into their respective training and testing sets
 * The target array was created using the `Machine Failures` column
-* The Features contains the remainder of the one-hot encoded variables
+* The Features contains the remainder of the variables
 * To test the models locally, the training set was split into testing and training sets using `sklearn` 
-* The training and testing sets were scaled using `StandardScaler()`
 
 ## Models and Their Performance
 
 ### Logistic Regression
 
 #### Additional Data Preprocessing
-*
-*
-*
+* The testing and training sets were concatenated into a dataframe so that one-hot encoding could be implemented, using the `pd.get_dummies()` function
+* The categorically encoded datasets were then split again into their respective training and testing sets
+* The training and testing sets were scaled using `StandardScaler()`
 #### Classification Report
 <img width="429" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/b2cb5485-6a42-4a5b-9860-c46fe216b1ee">
 
