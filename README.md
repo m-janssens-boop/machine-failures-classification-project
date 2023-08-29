@@ -61,6 +61,10 @@ This project tests different machine learning algorithms to find the optimal alg
 
 ### Logistic Regression
 
+#### Classification Report
+#### Time to Run
+#### Interpretability
+
 
 ### K-Means/K Nearest Neighbors
 
