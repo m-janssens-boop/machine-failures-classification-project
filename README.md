@@ -47,7 +47,7 @@ Machine Failure Classification
 ## Overview/Background
 This project tests different machine learning algorithms to find the optimal algorithm to predict machine failures for a large company that produces machine fabricated parts. The dataset used to train the models is synthetically generated and can be found at this [link](https://www.kaggle.com/competitions/playground-series-s3e17/data), it is based on this [Machine Failure Predictions dataset](https://www.kaggle.com/datasets/dineshmanikanta/machine-failure-predictions). 
 
-## Preprocessing the Data
+## Preprocessing the Data - these need to be updated since we changed how the data was preprocessed for each model
 * The csv files of the dataset were placed in s3 buckets on AWS
 * The `id` columns were dropped from both the training and the testing datasets
 * The testing and training sets were concatenated into a dataframe so that one-hot encoding could be implemented, using the `pd.get_dummies()` function
@@ -61,24 +61,64 @@ This project tests different machine learning algorithms to find the optimal alg
 
 ### Logistic Regression
 
+#### Additional Data Preprocessing
+*
+*
+*
 #### Classification Report
+Include screenshot here
 #### Time to Run
 #### Interpretability
 
 
 ### K-Means/K Nearest Neighbors
 
+#### Additional Data Preprocessing
+*
+*
+*
+#### Classification Report
+Include screenshot here
+#### Time to Run
+#### Interpretability
 
 ### Random Forest
 
+#### Additional Data Preprocessing
+*
+*
+*
+#### Classification Report
+Include screenshot here
+#### Time to Run
+#### Interpretability
 
 ### Gradient Boosting Classifier/Grid Search CV
 
+#### Additional Data Preprocessing
+*
+*
+*
+#### Classification Report
+Include screenshot here
+#### Time to Run
+#### Interpretability
 
 ### Neural Network
 
+#### Additional Data Preprocessing
+*
+*
+*
+#### Classification Report
+Include screenshot here
+#### Time to Run
+#### Interpretability
 
 ## Final Model Choice and Optimization
 
 
 ## Conclusions and Results
+
+## Project Presentation
+The link to our project presentation slides can be found [here](https://docs.google.com/presentation/d/10biaqRep5-ZiiN-dKkGj1IbnFcmimI6NaaFdfJqak3s/edit?usp=sharing)
