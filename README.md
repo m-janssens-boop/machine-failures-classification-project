@@ -66,7 +66,8 @@ This project tests different machine learning algorithms to find the optimal alg
 *
 *
 #### Classification Report
-Include screenshot here
+<img width="429" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/b2cb5485-6a42-4a5b-9860-c46fe216b1ee">
+
 #### Time to Run
 #### Interpretability
 
