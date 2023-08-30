@@ -63,10 +63,10 @@ This project tests different machine learning algorithms to find the optimal alg
 * The categorically encoded datasets were then split again into their respective training and testing sets
 * The training and testing sets were scaled using `StandardScaler()`
 #### Classification Report
-<img width="429" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/b2cb5485-6a42-4a5b-9860-c46fe216b1ee">
+<img width="406" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/f19fd131-2657-4ea0-9031-906aa76b5d44">
 
 #### Time to Run
-Under 10 minutes
+12.5 seconds
 #### Interpretability
 
 
