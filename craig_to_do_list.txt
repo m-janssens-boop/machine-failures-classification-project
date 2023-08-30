@@ -1,9 +1,0 @@
-Run Gradient Boost with Label Encoding on Product ID
-Run Gradient Boost dropping Product ID column
-Try oversampling
-
-after combine, after split y, before splitting into train and test
-oversample = RandomOverSampler(random_state=1, sampling_strategy=.1)
-X, y = oversample.fit_resample(X, y)
-
-nn_model

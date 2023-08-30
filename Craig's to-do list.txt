@@ -1,3 +1,0 @@
-Put a file into SQL or MongoDB
-
-Save the preprocessed dataframe as a csv and put it in the S3 bucket, then send out links to the group
