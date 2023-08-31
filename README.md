@@ -99,7 +99,7 @@ Include screenshot here
 * The categorically encoded datasets were then split again into their respective training and testing sets
 * Oversampling was done on the training set so that the set had 50% machine failures, which were only just over 1% in the original set
 #### Classification Report
-Include screenshot here
+<img width="406" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/blob/main/Visualizations/Classification_Report_PNGs/gboost_best_model_classification_report.png">
 #### Time to Run
 173.7 seconds
 #### Interpretability
