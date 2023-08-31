@@ -95,12 +95,13 @@ Include screenshot here
 ### Gradient Boosting Classifier/Grid Search CV
 
 #### Additional Data Preprocessing
-*
-*
-*
+* The testing and training sets were concatenated into a dataframe so that one-hot encoding could be implemented, using the `pd.get_dummies()` function
+* The categorically encoded datasets were then split again into their respective training and testing sets
+* Oversampling was done on the training set so that the set had 50% machine failures, which were only just over 1% in the original set
 #### Classification Report
 Include screenshot here
 #### Time to Run
+173.7 seconds
 #### Interpretability
 
 ### Neural Network
