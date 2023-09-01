@@ -1,0 +1,8 @@
+,model_name,oversampling,runtime(sec),accuracy,kaggle_score,0_precision,1_precision,0_recall,1_recall,0_f1,1_f1,0_support,1_support
+0,random forest,Y,270.0,0.999,0.91,1.0,0.99,1.0,1.0,1.0,1.0,33487,3441
+1,random forest,N,600.0,0.995,NaN,1.0,0.97,1.0,0.74,1.0,0.84,33588,520
+2,logistic regression,N,12.5,0.996,NaN,1.0,0.99,1.0,0.76,1.0,0.86,33564,544
+3,neural network,N,165.5,0.017,0.5,1.0,0.02,0.0,1.0,0.0,0.03,134281,2148
+4,neural network,Y,303.6,0.88,0.9,0.81,1.0,1.0,0.76,0.89,0.86,134281,134281
+5,gradient boosting,Y,173.7,0.95,0.92,0.98,0.98,0.93,0.93,0.95,0.95,134281,134281
+6,gradient boosting,Y,286.9,1.0,0.91,1.0,1.0,1.0,1.0,1.0,1.0,134281,134281
