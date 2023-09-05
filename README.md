@@ -73,12 +73,14 @@ Both of the classification reports, pre and post oversampling are included below
 ### Neural Network
 
 #### Additional Data Preprocessing
-*
-*
-*
+* Due to a low rate of machine failure, oversampling was done to boost the rate of machine failure to 50% of the data set.
+* In order to remove the categorical data, the `Product ID` column was dropped and `LabelEncoder()` was used to transform the `Type` column into numerical data.
+* The model was run with two hidden layers of 10 nodes and 3 nodes respectively, both using `relu` as their activation. The output layer had one node with the `sigmoid` output in order to make it approximate a boolean output.
 #### Classification Report
-Include screenshot here
+<img width = "400" alt="nn_model_oversampled_1" src="https://github.com/m-janssens-boop/machine-failures-classification-project/blob/main/Visualizations/nn_classification_resports/nn_model_oversampled_1.png?raw=true">
 #### Time to Run
+
+303.6 seconds
 
 ## Final Model Choice and Optimization
 
