@@ -98,9 +98,11 @@ The gradient boosting model was optimized through:
 When visualizing the feature importance for the top two performing models, gradient boosting and random forest, we found that the feature importance changes depending on the model used. 
 
 The gradient boosting feature importances are:
+<br />
 <img width="637" alt="gradient_boosting_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/4e04f75a-bc21-42f4-adf4-b4ab7086ef59">
 
 The random forest feature importances are:
+<br />
 <img width="685" alt="random_forest_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/9f7761cd-82d4-4be2-bf49-fea9a7423784">
 
 We are unsure why this is happening, and given more time, we would like to investigate this difference between models.
