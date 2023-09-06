@@ -44,7 +44,7 @@ Both of the classification reports, pre and post oversampling are included below
 
 ##### With oversampling
 <img width="398" alt="random_forest_with_oversampling" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/92b2970d-e2a8-42d2-8d98-7e12f35b504d">
-
+<br />
 <img width="398" alt="random_forest_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/29872b1f-4931-4953-b9ef-34db4c5996a6">
 
 #### Time to Run
