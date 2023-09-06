@@ -21,6 +21,7 @@ This project tests different machine learning algorithms to find the optimal alg
 #### Classification Report
 <img width="406" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/f19fd131-2657-4ea0-9031-906aa76b5d44">
 
+
 <img width="509" alt="logistic_regression_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/7fb67fef-60c3-4e5d-972a-547f5c8c0315">
 
 #### Time to Run
@@ -85,6 +86,11 @@ Gradient Boosting and Random Forest were quite close in their model performace, 
 
 The gradient boosting model was optimized through:
 * Ranging the oversampling ratio
+* Ranging the max depth
+* Ranging the estimators
+* Ranging the learn rate
+* Dropping or adding back specific columns
+* Using or not one-hot encoding 
 * Testing the hypertuned model via the Kaggle test dataset and scoring
 
 ## Conclusions and Results
