@@ -22,7 +22,7 @@ This project tests different machine learning algorithms to find the optimal alg
 <img width="406" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/f19fd131-2657-4ea0-9031-906aa76b5d44">
 
 <br />
-<img width="509" alt="logistic_regression_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/7fb67fef-60c3-4e5d-972a-547f5c8c0315">
+<img width="406" alt="logistic_regression_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/7fb67fef-60c3-4e5d-972a-547f5c8c0315">
 
 #### Time to Run
 12.5 seconds
@@ -126,3 +126,6 @@ Additionally, we would explore other models to see if another model would work b
 The link to our project presentation slides can be found [here](https://docs.google.com/presentation/d/10biaqRep5-ZiiN-dKkGj1IbnFcmimI6NaaFdfJqak3s/edit?usp=sharing) and the link to our Tableau dashboard can be found [here](https://public.tableau.com/views/Machine_Failure_Dashboard/GradientBoostOptimization?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
 
 ## References and Shoutouts
+
+* Kaggle [dataset](https://www.kaggle.com/competitions/playground-series-s3e17/data)
+* Natural Chan and his very helpful [machine learning repository](https://github.com/naturaljhc/ml_model_templates/tree/main)
