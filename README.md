@@ -1,6 +1,6 @@
 machine-failures-classification
 --------------------
-## Overview/Background
+## Background
 This project tests different machine learning algorithms to find the optimal algorithm to predict machine failures for a large company that produces machine fabricated parts. The dataset used to train the models is synthetically generated and can be found at this [link](https://www.kaggle.com/competitions/playground-series-s3e17/data), it is based on this [Machine Failure Predictions dataset](https://www.kaggle.com/datasets/dineshmanikanta/machine-failure-predictions). 
 
 ## Preprocessing the Data
@@ -21,19 +21,11 @@ This project tests different machine learning algorithms to find the optimal alg
 #### Classification Report
 <img width="406" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/f19fd131-2657-4ea0-9031-906aa76b5d44">
 
+<br />
+<img width="509" alt="logistic_regression_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/7fb67fef-60c3-4e5d-972a-547f5c8c0315">
+
 #### Time to Run
 12.5 seconds
-
-### K-Means/K Nearest Neighbors
-
-#### Additional Data Preprocessing
-*
-*
-*
-#### Classification Report
-Include screenshot here
-#### Time to Run
-
 
 ### Random Forest
 
@@ -53,6 +45,8 @@ Both of the classification reports, pre and post oversampling are included below
 ##### With oversampling
 <img width="398" alt="random_forest_with_oversampling" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/92b2970d-e2a8-42d2-8d98-7e12f35b504d">
 
+<img width="678" alt="random_forest_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/29872b1f-4931-4953-b9ef-34db4c5996a6">
+
 #### Time to Run
 270 seconds
 
@@ -66,6 +60,8 @@ Both of the classification reports, pre and post oversampling are included below
 #### Classification Report
 <img width="406" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/blob/main/Visualizations/Classification_Report_PNGs/gboost_best_model_classification_report.png">
 
+<img width="628" alt="gradient_boosting_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/94c5ed67-40c1-4e83-87af-b24f5d2421b4">
+
 #### Time to Run
 
 173.7 seconds
@@ -78,14 +74,54 @@ Both of the classification reports, pre and post oversampling are included below
 * The model was run with two hidden layers of 10 nodes and 3 nodes respectively, both using `relu` as their activation. The output layer had one node with the `sigmoid` output in order to make it approximate a boolean output.
 #### Classification Report
 <img width = "400" alt="nn_model_oversampled_1" src="https://github.com/m-janssens-boop/machine-failures-classification-project/blob/main/Visualizations/nn_classification_resports/nn_model_oversampled_1.png?raw=true">
+
+<img width="665" alt="neural_network_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/81f35c07-c480-4f46-b79e-957abb49015e">
+
 #### Time to Run
 
 303.6 seconds
 
 ## Final Model Choice and Optimization
+Gradient Boosting and Random Forest were quite close in their model performace, but the gradient boosting model performed slightly better. Thus, the gradient boosting model was selected to be optimized further.
 
+The gradient boosting model was optimized through:
+* Ranging the oversampling ratio
+* Ranging the max depth
+* Ranging the estimators
+* Ranging the learn rate
+* Dropping or adding back specific columns
+* Using or not one-hot encoding 
+* Testing the hypertuned model via the Kaggle test dataset and scoring
 
-## Conclusions and Results
+## Interesting Findings
+
+When visualizing the feature importance for the top two performing models, gradient boosting and random forest, we found that the feature importance changes depending on the model used. 
+
+The **gradient boosting** feature importances are:
+<br />
+<img width="637" alt="gradient_boosting_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/4e04f75a-bc21-42f4-adf4-b4ab7086ef59">
+
+The **random forest** feature importances are:
+<br />
+<img width="685" alt="random_forest_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/9f7761cd-82d4-4be2-bf49-fea9a7423784">
+
+We are unsure why this is happening, and given more time, we would like to investigate this difference between models.
+
+## Future Work
+
+To further optimize the gradient boosting model we would:
+
+* Pull out less important features
+* Hypertune parameters with oversampling ratio at 50/50
+* Clarify definitions of features and target
+* Explore features for failure conditions
+* Explore relationships between features
+* Using Kaggle scores to optimize the model (prevents overfitting)
+
+Additionally, we would explore other models to see if another model would work better than those that we tried.
+
 
 ## Project Presentation
 The link to our project presentation slides can be found [here](https://docs.google.com/presentation/d/10biaqRep5-ZiiN-dKkGj1IbnFcmimI6NaaFdfJqak3s/edit?usp=sharing) and the link to our Tableau dashboard can be found [here](https://public.tableau.com/views/Machine_Failure_Dashboard/GradientBoostOptimization?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
+
+## References and Shoutouts
