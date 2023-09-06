@@ -93,7 +93,33 @@ The gradient boosting model was optimized through:
 * Using or not one-hot encoding 
 * Testing the hypertuned model via the Kaggle test dataset and scoring
 
-## Conclusions and Results
+## Interesting Findings
+
+When visualizing the feature importance for the top two performing models, gradient boosting and random forest, we found that the feature importance changes depending on the model used. 
+
+The gradient boosting feature importances are:
+<img width="637" alt="gradient_boosting_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/4e04f75a-bc21-42f4-adf4-b4ab7086ef59">
+
+The random forest feature importances are:
+<img width="685" alt="random_forest_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/9f7761cd-82d4-4be2-bf49-fea9a7423784">
+
+We are unsure why this is happening, and given more time, we would like to investigate this difference between models.
+
+## Future Work
+
+To further optimize the gradient boosting model we would:
+
+* Pull out less important features
+* Hypertune parameters with oversampling ratio at 50/50
+* Clarify definitions of features and target
+* Explore features for failure conditions
+* Explore relationships between features
+* Using Kaggle scores to optimize the model (prevents overfitting)
+
+Additionally, we would explore other models to see if another model would work better than those that we tried.
+
 
 ## Project Presentation
 The link to our project presentation slides can be found [here](https://docs.google.com/presentation/d/10biaqRep5-ZiiN-dKkGj1IbnFcmimI6NaaFdfJqak3s/edit?usp=sharing) and the link to our Tableau dashboard can be found [here](https://public.tableau.com/views/Machine_Failure_Dashboard/GradientBoostOptimization?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
+
+## References and Shoutouts
