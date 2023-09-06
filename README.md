@@ -120,6 +120,7 @@ To further optimize the gradient boosting model we would:
 
 Additionally, we would explore other models to see if another model would work better than those that we tried.
 
+<img width="700" alt="Classification Report Data" src="https://github.com/m-janssens-boop/machine-failures-classification-project/blob/main/Visualizations/Classification%20report%20data.png?raw=true">
 
 ## Project Presentation
 The link to our project presentation slides can be found [here](https://docs.google.com/presentation/d/10biaqRep5-ZiiN-dKkGj1IbnFcmimI6NaaFdfJqak3s/edit?usp=sharing) and the link to our Tableau dashboard can be found [here](https://public.tableau.com/views/Machine_Failure_Dashboard/GradientBoostOptimization?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
