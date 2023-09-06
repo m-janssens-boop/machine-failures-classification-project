@@ -45,7 +45,7 @@ Both of the classification reports, pre and post oversampling are included below
 ##### With oversampling
 <img width="398" alt="random_forest_with_oversampling" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/92b2970d-e2a8-42d2-8d98-7e12f35b504d">
 
-<img width="678" alt="random_forest_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/29872b1f-4931-4953-b9ef-34db4c5996a6">
+<img width="398" alt="random_forest_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/29872b1f-4931-4953-b9ef-34db4c5996a6">
 
 #### Time to Run
 270 seconds
@@ -60,7 +60,7 @@ Both of the classification reports, pre and post oversampling are included below
 #### Classification Report
 <img width="406" alt="logistic_regression_classification_report" src="https://github.com/m-janssens-boop/machine-failures-classification-project/blob/main/Visualizations/Classification_Report_PNGs/gboost_best_model_classification_report.png">
 
-<img width="628" alt="gradient_boosting_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/94c5ed67-40c1-4e83-87af-b24f5d2421b4">
+<img width="406" alt="gradient_boosting_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/94c5ed67-40c1-4e83-87af-b24f5d2421b4">
 
 #### Time to Run
 
@@ -75,7 +75,7 @@ Both of the classification reports, pre and post oversampling are included below
 #### Classification Report
 <img width = "400" alt="nn_model_oversampled_1" src="https://github.com/m-janssens-boop/machine-failures-classification-project/blob/main/Visualizations/nn_classification_resports/nn_model_oversampled_1.png?raw=true">
 
-<img width="665" alt="neural_network_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/81f35c07-c480-4f46-b79e-957abb49015e">
+<img width="400" alt="neural_network_classification_graph" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/81f35c07-c480-4f46-b79e-957abb49015e">
 
 #### Time to Run
 
@@ -99,11 +99,11 @@ When visualizing the feature importance for the top two performing models, gradi
 
 The **gradient boosting** feature importances are:
 <br />
-<img width="637" alt="gradient_boosting_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/4e04f75a-bc21-42f4-adf4-b4ab7086ef59">
+<img width="450" alt="gradient_boosting_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/4e04f75a-bc21-42f4-adf4-b4ab7086ef59">
 
 The **random forest** feature importances are:
 <br />
-<img width="685" alt="random_forest_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/9f7761cd-82d4-4be2-bf49-fea9a7423784">
+<img width="450" alt="random_forest_feature_importances" src="https://github.com/m-janssens-boop/machine-failures-classification-project/assets/127706155/9f7761cd-82d4-4be2-bf49-fea9a7423784">
 
 We are unsure why this is happening, and given more time, we would like to investigate this difference between models.
 
